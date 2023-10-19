@@ -4,7 +4,9 @@ import SearchBar from "./components/SearchBar.jsx"
 import Products from "./components/Products.jsx"
 
 function App() {
-  const [productsData, setproductsData] = useState(datas)
+  const [productsData, setProductsData] = useState(datas)
+ 
+
 
   return (
     <div className="App">
@@ -26,16 +28,16 @@ function App() {
         </thead>
         
         <tbody>
-          <Products/>
-          
-          {productsData.map((product)=>{
+          <Products db={productsData}/>
+
+          {/*{productsData.map((product)=>{
             console.log(product)
             return(
             <tr key={product.id}>
               <td>{product.name}</td>
               <td>{product.price}</td>
             </tr>)
-          })}
+          })}*/}
         </tbody>
 
       </table>
