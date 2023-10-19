@@ -93,6 +93,10 @@ td, th {
   width: 125px;
 }
 
+td.red {
+  color: red;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

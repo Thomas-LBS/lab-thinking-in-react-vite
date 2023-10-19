@@ -2,7 +2,7 @@ function SearchBar() {
     return (
         <div className="search-container">
             <form>
-                <input type="text" placeholder="Search.." name="search" />
+                <input type="text" placeholder="Search.." name="search"/>
                 <button type="submit"><i className="fa fa-search"></i></button>
                 <br />
                 <input type="checkbox" id="stock" name="inStock" />
