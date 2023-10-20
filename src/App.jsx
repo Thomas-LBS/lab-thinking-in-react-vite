@@ -15,7 +15,7 @@ function App() {
       </div>
 
       {/* the search bar need to access "category", "price", "inStock", "name" */}
-      <SearchBar />
+      <SearchBar productsData={productsData} setProductsData={setProductsData} />
 
       {/* product table display "name" and "price" max 8 produits*/}
       <ProductTable db={productsData} />
